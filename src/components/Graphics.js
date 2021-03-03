@@ -3,8 +3,6 @@ import { Line } from 'react-chartjs-2'
 import { edad, getClientes } from '../services/clientes'
 import './styles/GraphicCard.css'
 
-
-
 const Graphics = () => {
   const [datos, setDatos] = useState({})
   const chart = ({ cantidad, edades }) => {
@@ -19,18 +17,22 @@ const Graphics = () => {
   }
   useEffect(() => {
     getClientes().then(cliente => {
-      const datos = cliente.map(persona => edad(persona.fechaNacim))
-      let dict = {}
-      for (let edad of datos) {
-        if (edad in dict) {
-          ++dict[edad]
-        } else {
-          dict[edad] = 1
+      try {
+        const datos = cliente.map(persona => edad(persona.fechaNacim))
+        let dict = {}
+        for (let edad of datos) {
+          if (edad in dict) {
+            ++dict[edad]
+          } else {
+            dict[edad] = 1
+          }
         }
+        const cantidad = Object.values(dict)
+        const edades = Object.keys(dict)
+        chart({ cantidad, edades })
+      } catch (error) {
+        console.log(error)
       }
-      const cantidad = Object.values(dict)
-      const edades = Object.keys(dict)
-      chart({ cantidad, edades })
     })
   }, [])
   return (
