@@ -1,5 +1,5 @@
-// const apiURL = 'https://prueba-api-clientes.herokuapp.com'
-const apiURL = 'http://localhost:3001'
+const apiURL = 'https://prueba-api-clientes.herokuapp.com'
+// const apiURL = 'http://localhost:3001'
 
 export const getClientes = () => {
   return fetch(`${apiURL}/listclientes`)
