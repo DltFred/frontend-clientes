@@ -1,0 +1,17 @@
+.cards{
+  align-items: center;
+  justify-self: center;
+  background-color: var(--third-color);
+  border-radius: .2rem;
+  box-shadow: 5px 5px 5px var(--black-color);
+  color: var(--black-color);
+  display: inline-flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  margin: 1rem;
+  width: 200px;
+}
+.cards h2{
+  font-size: 1.25rem;
+}

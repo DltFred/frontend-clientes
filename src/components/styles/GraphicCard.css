@@ -1,0 +1,14 @@
+.graphicCard{
+  background-color: var(--white-color);
+  padding: .5rem;
+  margin: 2rem auto;
+  border-radius: .3rem;
+  max-width: 600px;
+}
+
+.graphicCard p{
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--black-color);
+  font-weight: bold;
+}

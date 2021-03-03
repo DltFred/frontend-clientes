@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import CardsInfo from './components/CardsInfo'
+import Formulario from './components/Formulario'
+import Graphics from './components/Graphics'
+import ListaClientes from './components/ListaClientes'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Dashboard Clientes</h1>
+      <div className='App-container'>
+        <Formulario />
+        <ListaClientes />
+        <Graphics />
+        <div className='App-info'>
+          <CardsInfo title='Promedio' />
+          <CardsInfo title='Desviacion' />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,36 @@
+
+.formulario{
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto 2rem;
+  background: var(--third-color);
+  padding: 1rem;
+  border-radius: .3rem;
+}
+.formulario h1{
+  font-size: 1rem;
+  color: var(--black-color);
+}
+.formulario input{
+  margin: .5rem 0;
+  border: none;
+  padding: .4rem;
+}
+
+.formulario button{
+  background: var(--black-color);
+  border:none;
+  border-radius: .3rem;
+  color: var(--third-color);
+  font-weight: bold;
+  margin: .5rem auto;
+  padding: .5rem;
+  transition: all ease-in-out .3s;
+  width: 6rem;
+}
+.formulario button:hover{
+  background-color: var(--third-color);
+  color: var(--black-color);
+  box-shadow: 0 0 5px 2px var(--black-color);
+}
