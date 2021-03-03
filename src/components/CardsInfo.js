@@ -3,10 +3,10 @@ import { getKpiClientes } from "../services/clientes"
 import './styles/Cards.css'
 
 const CardsInfo = ({ title }) => {
-  const [kpis, setKpis] = useState([{ prom: '', desv: '' }])
+  const [kpis, setKpis] = useState([])
   useEffect(() => {
-    getKpiClientes().then(res => setKpis(res), [])
-  })
+    getKpiClientes().then(res => setKpis(res))
+  }, [])
   return (
     <div className='cards'>
       <h2>{title}</h2>

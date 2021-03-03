@@ -1,0 +1,32 @@
+[debug] [2021-03-03T11:03:36.773Z] ----------------------------------------------------------------------
+[debug] [2021-03-03T11:03:36.775Z] Command:       /home/dltfred/.nvm/versions/node/v14.15.5/bin/node /home/dltfred/.nvm/versions/node/v14.15.5/bin/firebase deploy
+[debug] [2021-03-03T11:03:36.775Z] CLI Version:   9.5.0
+[debug] [2021-03-03T11:03:36.775Z] Platform:      linux
+[debug] [2021-03-03T11:03:36.775Z] Node Version:  v14.15.5
+[debug] [2021-03-03T11:03:36.777Z] Time:          Wed Mar 03 2021 06:03:36 GMT-0500 (Peru Standard Time)
+[debug] [2021-03-03T11:03:36.777Z] ----------------------------------------------------------------------
+[debug] [2021-03-03T11:03:36.777Z] 
+[debug] [2021-03-03T11:03:36.787Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-03T11:03:36.788Z] > authorizing via signed-in user
+[debug] [2021-03-03T11:03:36.788Z] [iam] checking project dashboard-clientes-be116 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-03-03T11:03:36.790Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-03T11:03:36.790Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-03T11:03:37.050Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 03 Mar 2021 11:03:38 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-03T11:03:37.059Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/dashboard-clientes-be116:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-03-03T11:03:38.207Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Mar 2021 11:03:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=906","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-03T11:03:38.209Z] > refreshing access token with scopes: []
+[debug] [2021-03-03T11:03:38.209Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-03T11:03:38.387Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 03 Mar 2021 11:03:39 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-03T11:03:38.393Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dashboard-clientes-be116 [none]
+[debug] [2021-03-03T11:03:38.893Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dashboard-clientes-be116 200
+[debug] [2021-03-03T11:03:38.894Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dashboard-clientes-be116 {"projectId":"dashboard-clientes-be116","projectNumber":"551317117717","displayName":"dashboard-clientes","name":"projects/dashboard-clientes-be116","resources":{"hostingSite":"dashboard-clientes-be116"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'dashboard-clientes-be116'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-03-03T11:03:38.897Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-03T11:03:38.897Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>

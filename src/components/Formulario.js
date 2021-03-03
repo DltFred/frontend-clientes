@@ -1,15 +1,15 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { createCliente, edad } from "../services/clientes"
 import './styles/Formulario.css'
-const Formulario = () => {
 
+const Formulario = () => {
   const pintarCliente = (cliente) => {
     const template = `<tr>
-            <td>${cliente.nombre}</td>
-            <td>${cliente.apellido}</td>
-            <td>${cliente.fechaNacim.slice(0, 10)}</td>
-            <td>${edad(cliente.fechaNacim)}</td>
-          </tr>`
+    <td>${cliente.nombre}</td>
+    <td>${cliente.apellido}</td>
+    <td>${cliente.fechaNacim.slice(0, 10)}</td>
+    <td>${edad(cliente.fechaNacim)}</td>
+    </tr>`
     const tabla = document.getElementById('tabla')
     tabla.insertAdjacentHTML('beforeend', template)
   }
@@ -21,11 +21,15 @@ const Formulario = () => {
       apellido: apellido.value,
       fechaNacim: fnacim.value
     }
-    createCliente(data)
+    const respuesta = createCliente(data)
     nombre.value = ''
     apellido.value = ''
     fnacim.value = ''
-    pintarCliente(data)
+    respuesta.then(x => {
+      if (x === 'succes') {
+        pintarCliente(data)
+      }
+    })
   }
 
   return (
